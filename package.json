@@ -1,0 +1,28 @@
+{
+  "name": "mentorship",
+  "version": "0.0.1",
+  "description": "Apoyo en **Desarrollo Web Full Stack JavaScript**, para grupos reducidos.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --quiet index.html",
+    "build:css": "postcss src/app.css -o dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undefinedschool/mentorship.git"
+  },
+  "keywords": [],
+  "author": "Nicolas Quiroz <nh.quiroz@gmail.com> (nicolasquiroz.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undefinedschool/mentorship/issues"
+  },
+  "homepage": "https://github.com/undefinedschool/mentorship#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}
