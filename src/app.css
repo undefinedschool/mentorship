@@ -6,6 +6,7 @@
   --brand-white: #fafafa;
   --brand-black: #1f2327;
   --brand-cyan: #00c6b3;
+  --brand-cyan-light: #00e6cf;
   --brand-light-green: #d6eadf;
 }
 
@@ -51,7 +52,7 @@ html {
 }
 
 .apply-button:hover {
-  background-color: var(--brand-cyan);
+  background-color: var(--brand-cyan-light);
   transition: all 0.3s ease;
 }
 
