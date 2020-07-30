@@ -83,3 +83,7 @@ a:hover {
 .max-w-xxs {
   max-width: 8rem;
 }
+
+.shadow-black {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
