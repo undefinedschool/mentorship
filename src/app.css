@@ -75,3 +75,11 @@ a:hover {
   transition: all 0.3s ease;
   color: var(--brand-cyan);
 }
+
+.w-xxs {
+  width: 8rem;
+}
+
+.max-w-xxs {
+  max-width: 8rem;
+}
