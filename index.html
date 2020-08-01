@@ -22,7 +22,7 @@
       src="https://plausible.io/js/plausible.js"
     ></script>
   </head>
-  <body class="bg-brand-black">
+  <body id="top" class="bg-brand-black">
     <div class="hint shadow-inner"></div>
     <div class="lg:p-32 md:p-24 p-10">
       <header class="h-screen mb-40">
@@ -78,7 +78,7 @@
             </div>
 
             <div class="mb-3 object-scale-down max-w-md mx-auto">
-              <img src="assets/hero-image.svg" alt="Women who code" />
+              <img src="assets/hero-image.svg" alt="women who code" />
             </div>
 
             <div class="mb-20">
@@ -143,24 +143,29 @@
           <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
             Sobre el grupo
           </h2>
-          <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
-            <ul class="ml-8 list-disc">
-              <li class="mb-3">
-                Se formará <strong class="font-semibold">un único grupo</strong>, con un
-                <strong class="font-semibold">máximo de 12 estudiantes</strong>. Estudiar en grupos
-                reducidos mejora la experiencia: es más efectivo, se trabaja mejor y se avanza más
-                rápido.
-              </li>
-              <li class="mb-3">
-                Este grupo será <strong class="font-semibold">dinámico</strong>: si alguien libera
-                su lugar, se abre una nueva vacante (respetando el máximo de 12).
-              </li>
-              <li>
-                Se busca que sea más <strong class="font-semibold">diverso</strong> y esté
-                conformado en su mayoría por <strong class="font-semibold">mujeres</strong> y
-                <strong class="font-semibold">disidencias</strong>.
-              </li>
-            </ul>
+          <div class="flex items-center flex-col md:flex-row">
+            <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+              <ul class="ml-8 list-disc">
+                <li class="mb-3">
+                  Se formará <strong class="font-semibold">un único grupo</strong>, con un
+                  <strong class="font-semibold">máximo de 12 estudiantes</strong>, con el fin de
+                  mejorar la experiencia.
+                </li>
+                <li class="mb-3">
+                  <strong class="font-semibold">Dinámico</strong>: si alguien libera su lugar, se
+                  abre una nueva vacante.
+                </li>
+                <li>
+                  Se busca que sea más <strong class="font-semibold">diverso</strong> y esté
+                  conformado en su mayoría por <strong class="font-semibold">mujeres</strong> y
+                  <strong class="font-semibold">disidencias</strong>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="md:ml-8 mt-8 md:mt-0 object-scale-down max-w-sm mx-auto">
+              <img src="assets/group.svg" alt="women who code" />
+            </div>
           </div>
         </section>
 
@@ -743,7 +748,8 @@
       </main>
       <footer class="mt-24 font-light text-sm text-brand-white text-center">
         <p>
-          Dev x
+          <a class="underline" href="#top">Inicio</a>
+          | dev x
           <a
             class="underline"
             href="https://twitter.com/_nhsz"
