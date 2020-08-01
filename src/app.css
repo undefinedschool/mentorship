@@ -76,6 +76,11 @@ a:hover {
   color: var(--brand-cyan);
 }
 
+.menu > li:hover {
+  transition: all 0.3s ease;
+  color: var(--brand-white);
+}
+
 .w-xxs {
   width: 8rem;
 }
