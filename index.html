@@ -31,7 +31,7 @@
       >
         <div class="flex items-center justify-between md:px-0 px-10">
           <div>
-            <a href="./index.html">
+            <a href="./">
               <p
                 id="logo"
                 style="font-family: 'Montserrat', sans-serif;"
@@ -832,6 +832,7 @@
       const hamburguerButton = document.getElementById('hamburguer-button');
       const openIcon = document.getElementById('open-icon');
       const closeIcon = document.getElementById('close-icon');
+      const isMobile = window.innerWidth < 768;
 
       let isOpen = false;
 
@@ -851,17 +852,20 @@
         }
       });
 
-      if (window.innerWidth < 768) {
-        document.body.addEventListener('click', () => {
-          if (hamburguerButton !== document.activeElement) {
-            nav.style.maxHeight = 0;
-            navList.style.display = 'none';
-            openIcon.style.display = 'block';
-            closeIcon.style.display = 'none';
-            isOpen = false;
-          }
-        });
-      }
+      // window.addEventListener('resize', () => {
+      //   isOpen = false;
+      //   if (!isMobile) navList.style.display = 'block';
+      // });
+
+      document.body.addEventListener('click', () => {
+        if (isMobile && hamburguerButton !== document.activeElement) {
+          nav.style.maxHeight = 0;
+          navList.style.display = 'none';
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+          isOpen = false;
+        }
+      });
     </script>
   </body>
 </html>
