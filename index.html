@@ -23,18 +23,95 @@
     ></script>
   </head>
   <body id="top" class="bg-brand-black">
-    <div class="hint shadow-inner"></div>
-    <div class="lg:p-32 md:p-24 p-10">
-      <header class="h-screen mb-40">
-        <nav>
-          <p
-            style="font-family: 'Montserrat', sans-serif;"
-            class="text-lg font-semibold mb-8 md:mb-32 -mt-6 md:-mt-20 lg:-mt-24"
-          >
-            <span class="text-brand-white">undefined</span>
-            <span class="text-brand-cyan">school</span>
-          </p>
+    <div class="fixed z-10 bg-brand-black w-full top-0 shadow-xs">
+      <div class="hint shadow-inner"></div>
+
+      <div
+        class="lg:flex lg:justify-between sm:py-2 pt-2 fixed z-10 bg-brand-black w-full mb-8 md:mb-32 lg:px-32 md:px-24 shadow-xs"
+      >
+        <div class="flex items-center justify-between md:px-0 px-10">
+          <div>
+            <a href="./index.html">
+              <p
+                id="logo"
+                style="font-family: 'Montserrat', sans-serif;"
+                class="text-lg font-semibold"
+              >
+                <span class="text-brand-white">undefined</span>
+                <span class="text-brand-cyan">school</span>
+              </p>
+              <p
+                style="color: #5e5d6c; font-family: 'Raleway', sans-serif;"
+                class="text-xs -mt-1 text-right"
+              >
+                <em>mentorship</em>
+              </p>
+            </a>
+          </div>
+          <div class="lg:hidden">
+            <button
+              id="hamburguer-button"
+              type="button"
+              class="object-scale-down block text-brand-white focus:outline-none"
+            >
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  id="open-icon"
+                  fill-rule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+
+                <path
+                  id="close-icon"
+                  fill-rule="evenodd"
+                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <nav
+          id="hamburguer-menu"
+          class="transition-all duration-150 ease-in px-8 mt-3 sm:mt-1 sm:text-center"
+        >
+          <div>
+            <ul
+              style="font-family: 'Raleway', sans-serif;"
+              class="nav-list lg:inline-block hidden text-sm text-brand-light-gray"
+            >
+              <a href="#requirements"
+                ><li class="nav-link rounded block sm:inline-block px-2 sm:px-4 py-1">
+                  Requisitos
+                </li></a
+              >
+              <a href="#how-it-works"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  Cómo funciona
+                </li></a
+              >
+              <a href="#pricing"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  Costo
+                </li></a
+              >
+              <a href="#faq"
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
+                  FAQ
+                </li></a
+              >
+              <a href="#contact"
+                ><li class="nav-link rounded block sm:inline-block mt-1 mb-2 px-2 sm:px-4 py-1">
+                  Contacto
+                </li></a
+              >
+            </ul>
+          </div>
         </nav>
+      </div>
+    </div>
+    <div class="lg:p-32 md:p-24 p-10">
+      <header class="mt-10 sm:mt-16 mb-40">
         <div style="font-family: 'Montserrat', sans-serif;" class="mx-auto">
           <div class="text-brand-white">
             <div class="mb-10 sm:mb-16">
@@ -92,13 +169,13 @@
           </div>
         </div>
       </header>
-      <main id="about" class="container text-brand-white">
-        <section class="max-w-5xl mb-48">
+      <main class="container text-brand-white">
+        <section id="about" class="max-w-5xl mb-48">
           <h2
             class="text-brand-cyan text-3xl mb-10 font-semibold"
             style="font-family: 'Raleway', sans-serif;"
           >
-            De qué se trata?
+            De qué se trata
           </h2>
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
             <p>
@@ -120,7 +197,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><strong class="font-semibold">freeCodeCamp</strong></a
-              >, en orden, empezando por
+              >, en orden y <strong class="font-semibold">desde cero</strong>, empezando por
               <a
                 class="underline"
                 href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/"
@@ -148,8 +225,7 @@
               <ul class="ml-8 list-disc">
                 <li class="mb-3">
                   Se formará <strong class="font-semibold">un único grupo</strong>, con un
-                  <strong class="font-semibold">máximo de 12 estudiantes</strong>, con el fin de
-                  mejorar la experiencia.
+                  <strong class="font-semibold">máximo de 12 estudiantes</strong>.
                 </li>
                 <li class="mb-3">
                   <strong class="font-semibold">Dinámico</strong>: si alguien libera su lugar, se
@@ -164,14 +240,14 @@
             </div>
 
             <div class="md:ml-8 mt-8 md:mt-0 object-scale-down max-w-sm mx-auto">
-              <img src="assets/group.svg" alt="women who code" />
+              <img src="assets/group.svg" alt="study group" />
             </div>
           </div>
         </section>
 
         <section id="why" class="mb-48 max-w-5xl">
           <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
-            Por qué es mejor que estudiar por mi cuenta?
+            Por qué es mejor que estudiar por mi cuenta
           </h2>
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
             <ul class="ml-8 list-disc">
@@ -207,7 +283,7 @@
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
             <ul class="ml-8 list-disc">
               <li class="mb-3">
-                Familiaridad con la plataforma de
+                Familiaridad con
                 <a
                   class="underline"
                   href="https://freeCodeCamp.org/"
@@ -218,24 +294,22 @@
                 (haberse registrado y resuelto algún ejercicio, etc).
               </li>
               <li class="mb-3">
-                <strong class="font-semibold">Disponer de tiempo para dedicarle al estudio</strong>
+                Disponer de <strong class="font-semibold">tiempo para dedicarle al estudio</strong>
                 (lo recomendado es, al menos 1hr por día, siguiendo la filosofía del
                 <a
                   class="underline"
                   href="https://www.100daysofcode.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><strong class="font-semibold">#100DaysOfCode</strong></a
+                  >#100DaysOfCode</a
                 >).
               </li>
               <li class="mb-3"><strong class="font-semibold">Micrófono</strong> para las calls.</li>
               <li class="mb-3">
-                <strong class="font-semibold">Espíritu autodidacta y compromiso</strong>
-                (de esto va a depender cómo y cuán rápido avancemos).
+                Espíritu autodidacta y <strong class="font-semibold">compromiso</strong>.
               </li>
               <li class="mb-3">
-                <strong class="font-semibold">Buena onda y ganas de aprender</strong>. Leer y
-                <strong class="font-semibold">respetar</strong> el
+                Leer y respetar el
                 <a
                   class="underline"
                   href="http://bit.ly/fccba-codigo"
@@ -275,8 +349,8 @@
                 >).
               </li>
               <li class="mb-3">
-                <strong class="font-semibold">No son clases, no hay teoría</strong> (vas a estudiar
-                por tu cuenta), mi rol es proponer una
+                <strong class="font-semibold">No son clases</strong> (vas a estudiar la teoría por
+                tu cuenta), mi rol es proponer una
                 <strong class="font-semibold">dinámica de trabajo</strong> (que se va a ir adaptando
                 al grupo), <strong class="font-semibold">guiarte</strong> cuando no se entienda
                 algún enunciado o tengas dificultades con algún ejercicio,
@@ -285,8 +359,8 @@
                 todas las respuestas, si algo no sale, lo googleamos y vemos como lo resolvemos. 🤘
               </li>
               <li class="mb-3">
-                <strong class="font-semibold">Code reviews</strong> (feedback grupal): vas a evaluar
-                las soluciones del resto, para poner a prueba tus conocimientos.
+                <strong class="font-semibold">Code reviews</strong>: vas a evaluar las soluciones
+                del resto, para poner a prueba tus conocimientos.
               </li>
               <li>
                 <strong class="font-semibold">Canal privado de Discord</strong>, para hacer o
@@ -303,17 +377,11 @@
             Días y horarios
           </h2>
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
-            <ul class="ml-8 list-disc">
-              <li class="mb-3">
-                <strong class="font-semibold">2 veces por semana, de 19 a 20hs</strong> (horario
-                según <strong class="font-semibold">UTC/GMT -03:00</strong>, Argentina/Buenos
-                Aires).
-              </li>
-              <li>
-                Días a confirmar (las opciones van a ser lunes y miércoles ó martes y jueves),
-                <strong class="font-semibold">comenzando la 2da semana de Agosto</strong>.
-              </li>
-            </ul>
+            <p>
+              <strong class="font-semibold">Lunes y Miércoles, de 19 a 20hs</strong> (horario según
+              <strong class="font-semibold">UTC/GMT -03:00</strong>, Argentina/Buenos Aires),
+              comenzando el Lunes 10 de Agosto.
+            </p>
           </div>
         </section>
 
@@ -322,7 +390,7 @@
             class="text-brand-cyan text-3xl mb-10 font-semibold"
             style="font-family: 'Raleway', sans-serif;"
           >
-            Cuánto cuesta?
+            Costo
           </h2>
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
             <p>
@@ -332,9 +400,9 @@
                 >el precio de cada sesión lo ponés vos (no es gratis)</strong
               >, con un
               <strong class="font-semibold">mínimo sugerido de ARS $400 por sesión</strong>
-              (es decir, ARS $800 por semana). De ahí en adelante,
-              <strong class="font-semibold">sentite libre de aportar lo que quieras y puedas</strong
-              >, según el valor que consideres que te aportó la mentoría.
+              (o lo que es lo mismo, ARS $800 por semana ó ARS $3200 por mes). De ahí en adelante,
+              sentite libre de aportar lo que quieras y puedas, según el valor que consideres que te
+              aportó la mentoría.
             </p>
 
             <br />
@@ -358,7 +426,7 @@
             class="text-brand-cyan text-3xl mb-12 font-semibold"
             style="font-family: 'Raleway', sans-serif;"
           >
-            Qué opinan los estudiantes
+            Algunas opiniones
           </h2>
 
           <div class="mb-8 flex flex-col sm:flex-row items-center p-6 shadow-black rounded">
@@ -534,7 +602,7 @@
             class="text-brand-cyan text-3xl mb-12 font-semibold"
             style="font-family: 'Raleway', sans-serif;"
           >
-            Preguntas frecuentes
+            FAQ
           </h2>
           <section class="mb-24">
             <h3 class="text-xl mb-6" style="font-family: 'Raleway', sans-serif;">
@@ -593,7 +661,7 @@
               <strong class="font-semibold">BTC</strong> o a través de
               <strong class="font-semibold">PayPal</strong>. En ese caso,
               <strong class="font-semibold">el monto mínimo sugerido es de U$S 5 por sesión</strong>
-              (es decir, U$S 10 por semana).
+              (es decir, U$S 10 por semana ó U$S 40 por mes).
             </p>
           </section>
 
@@ -634,10 +702,8 @@
             </h3>
 
             <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
-              Si, 1 vez por mes (puede llegar a ser antes), si hay vacantes y mientras siga
-              funcionando este proyecto, se va a reabrir la inscripción para participar (si ya
-              estás, podés quedarte y seguir), dándole prioridad a la gente que haya quedado en
-              lista de espera.
+              Si, en el caso de que haya vacantes, te voy a estar avisando para que te sumes,
+              dándole prioridad a la gente que haya quedado en lista de espera.
             </p>
           </section>
         </section>
@@ -669,7 +735,7 @@
 
         <section
           id="about-mentor"
-          class="text-brand-white mb-48 p-6 shadow-black rounded max-w-5xl"
+          class="text-brand-white mb-64 p-6 shadow-black rounded max-w-5xl"
         >
           <h2
             class="text-brand-cyan text-3xl mb-12 font-semibold"
@@ -712,7 +778,7 @@
           </div>
         </section>
 
-        <section id="contact" class="text-brand-white max-w-5xl">
+        <section id="contact" class="mb-64 text-brand-white max-w-5xl">
           <h2
             class="text-brand-cyan text-3xl mb-12 font-semibold"
             style="font-family: 'Raleway', sans-serif;"
@@ -738,7 +804,7 @@
       </main>
       <footer class="mt-24 font-light text-sm text-brand-white text-center">
         <p>
-          <a class="underline" href="#top">Inicio</a>
+          <a class="underline" href="#top">inicio</a>
           | dev x
           <a
             class="underline"
@@ -758,5 +824,44 @@
         </p>
       </footer>
     </div>
+
+    <script>
+      const nav = document.getElementById('hamburguer-menu');
+      let navList = document.getElementsByClassName('nav-list');
+      navList = navList[0];
+      const hamburguerButton = document.getElementById('hamburguer-button');
+      const openIcon = document.getElementById('open-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      let isOpen = false;
+
+      hamburguerButton.addEventListener('click', () => {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+          nav.style.maxHeight = '200px';
+          openIcon.style.display = 'none';
+          closeIcon.style.display = 'block';
+          setTimeout(() => (navList.style.display = 'block'), 100);
+        } else {
+          nav.style.maxHeight = 0;
+          navList.style.display = 'none';
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+        }
+      });
+
+      if (window.innerWidth < 768) {
+        document.body.addEventListener('click', () => {
+          if (hamburguerButton !== document.activeElement) {
+            nav.style.maxHeight = 0;
+            navList.style.display = 'none';
+            openIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+            isOpen = false;
+          }
+        });
+      }
+    </script>
   </body>
 </html>

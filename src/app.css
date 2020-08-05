@@ -8,6 +8,7 @@
   --brand-cyan: #00c6b3;
   --brand-cyan-light: #00e6cf;
   --brand-light-green: #d6eadf;
+  --brand-light-gray: #d1d1d1;
 }
 
 html {
@@ -20,6 +21,10 @@ html {
 
 .text-brand-cyan {
   color: var(--brand-cyan);
+}
+
+.text-brand-light-gray {
+  color: var(--brand-light-gray);
 }
 
 .text-brand-black {
@@ -91,4 +96,25 @@ a:hover {
 
 .shadow-black {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+#hamburguer-button:focus {
+  color: var(--brand-cyan);
+}
+
+.nav-link:hover {
+  background-color: #00c6b240;
+  transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: inherit;
+}
+
+#hamburguer-menu {
+  max-height: 0;
+}
+
+#close-icon {
+  display: none;
 }
