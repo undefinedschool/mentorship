@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentoreo en Desarrollo Full Stack JavaScript | undefined school</title>
+    <title>Mentoría en Desarrollo Full Stack JavaScript | undefined school</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
     <link rel="stylesheet" href="dist/styles.css" />
@@ -119,14 +119,11 @@
                 class="text-4xl md:text-5xl mb-4 sm:mb-6 leading-none"
                 style="font-family: 'Raleway', sans-serif;"
               >
-                <span class="font-light">Mentoreo en</span>
+                <span class="font-light">Mentoría en</span>
                 <span class="font-semibold">Desarrollo Full Stack JavaScript</span>
               </h1>
               <p style="font-family: 'Raleway', sans-serif;">
-                Apoyo en
-                <strong
-                  >Desarrollo Web Full Stack <span class="text-brand-cyan">JavaScript</span></strong
-                >, para grupos reducidos.
+                Apoyo en <strong>Desarrollo Web Full Stack</strong>, para grupos reducidos.
               </p>
             </div>
 
@@ -171,10 +168,7 @@
       </header>
       <main class="container text-brand-white">
         <section id="about" class="max-w-5xl mb-48">
-          <h2
-            class="text-brand-cyan text-3xl mb-10 font-semibold"
-            style="font-family: 'Raleway', sans-serif;"
-          >
+          <h2 class="text-brand-cyan text-3xl mb-10" style="font-family: 'Raleway', sans-serif;">
             De qué se trata
           </h2>
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
@@ -386,10 +380,7 @@
         </section>
 
         <section id="pricing" class="max-w-5xl mb-48">
-          <h2
-            class="text-brand-cyan text-3xl mb-10 font-semibold"
-            style="font-family: 'Raleway', sans-serif;"
-          >
+          <h2 class="text-brand-cyan text-3xl mb-10" style="font-family: 'Raleway', sans-serif;">
             Costo
           </h2>
           <div style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
@@ -422,10 +413,7 @@
         </section>
 
         <section id="reviews" class="text-brand-white mb-64 max-w-5xl">
-          <h2
-            class="text-brand-cyan text-3xl mb-12 font-semibold"
-            style="font-family: 'Raleway', sans-serif;"
-          >
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
             Algunas opiniones
           </h2>
 
@@ -598,10 +586,7 @@
         </section>
 
         <section id="faq" class="mb-64 max-w-5xl">
-          <h2
-            class="text-brand-cyan text-3xl mb-12 font-semibold"
-            style="font-family: 'Raleway', sans-serif;"
-          >
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
             FAQ
           </h2>
           <section class="mb-24">
@@ -737,20 +722,21 @@
           id="about-mentor"
           class="text-brand-white mb-64 p-6 shadow-black rounded max-w-5xl"
         >
-          <h2
-            class="text-brand-cyan text-3xl mb-12 font-semibold"
-            style="font-family: 'Raleway', sans-serif;"
-          >
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
             Sobre el mentor
           </h2>
 
           <div class="flex flex-col sm:flex-row items-center">
-            <div class="max-w-xxs sm:max-w-xs sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
-              <img class="rounded-full" src="assets/myself.jpg" alt="Nico" />
+            <div class="max-w-48 sm:mb-0 mb-8 sm:mr-8 inline-block shadow-sm">
+              <img
+                class="rounded-full"
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQFyEmClgeHH1g/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=4Fc7wH-yuMVXYg4LQyGqwD8IZjggSJfpPSNcEXznnzk"
+                alt="Nico"
+              />
             </div>
 
             <div>
-              <p style="font-family: 'Montserrat', sans-serif;" class="text-base font-light mb-8">
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light mb-8">
                 <strong class="font-semibold">Full Stack Software Engineer</strong> desde hace más
                 de 5 años y mentor en <strong class="font-semibold">desarrollo web</strong> desde
                 hace más de 3. Me gusta estudiar y entender los conceptos en profundidad, para
@@ -764,7 +750,7 @@
                 >.
               </p>
 
-              <p style="font-family: 'Montserrat', sans-serif;" class="text-base font-light">
+              <p style="font-family: 'Montserrat', sans-serif;" class="text-sm font-light">
                 Co-fundador y co-organizador de (<a
                   class="underline"
                   href="https://freecodecampba.org"
@@ -779,10 +765,7 @@
         </section>
 
         <section id="contact" class="mb-64 text-brand-white max-w-5xl">
-          <h2
-            class="text-brand-cyan text-3xl mb-12 font-semibold"
-            style="font-family: 'Raleway', sans-serif;"
-          >
+          <h2 class="text-brand-cyan text-3xl mb-12" style="font-family: 'Raleway', sans-serif;">
             Contacto
           </h2>
 
@@ -836,6 +819,10 @@
 
       let isOpen = false;
 
+      window.addEventListener('resize', () => {
+        if (!isMobile) navList.style.display = 'block';
+      });
+
       hamburguerButton.addEventListener('click', () => {
         isOpen = !isOpen;
 
@@ -851,11 +838,6 @@
           closeIcon.style.display = 'none';
         }
       });
-
-      // window.addEventListener('resize', () => {
-      //   isOpen = false;
-      //   if (!isMobile) navList.style.display = 'block';
-      // });
 
       document.body.addEventListener('click', () => {
         if (isMobile && hamburguerButton !== document.activeElement) {
