@@ -43,6 +43,10 @@ html {
   background-color: var(--brand-cyan);
 }
 
+.border-brand-white {
+  border-color: #fafafa;
+}
+
 .hint {
   height: 4px;
   background-color: var(--brand-cyan);
@@ -58,6 +62,12 @@ html {
 
 .apply-button:hover {
   background-color: var(--brand-cyan-light);
+  transition: all 0.3s ease;
+}
+
+.nav-apply:hover {
+  color: var(--brand-cyan);
+  border-color: var(--brand-cyan);
   transition: all 0.3s ease;
 }
 
