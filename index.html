@@ -106,14 +106,17 @@
                 </li></a
               >
               <a
+                class="nav-apply-link"
                 href="https://undefinedschool.typeform.com/to/iAGeBSdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><button
-                  class="nav-apply text-brand-white block sm:inline-block mt-1 mb-2 text-center px-2 sm:px-4 py-1 border border-brand-white rounded"
-                >
-                  Aplicar
-                </button></a
+                ><li class="block sm:inline-block text-brand-white mt-1 mb-2 rounded">
+                  <button
+                    class="nav-apply-button rounded px-2 sm:ml-2 sm:px-4 py-1 text-center sm:border sm:border-brand-white font-semibold sm:font-normal lg:shadow-xs"
+                  >
+                    Aplicar
+                  </button>
+                </li></a
               >
             </ul>
           </div>
@@ -836,7 +839,7 @@
       let isOpen = false;
 
       window.addEventListener('resize', () => {
-        if (isMobile) {
+        if (!isOpen && window.innerWidth < 1024) {
           nav.style.maxHeight = 0;
           navList.style.display = 'none';
           openIcon.style.display = 'block';
