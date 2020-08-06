@@ -101,7 +101,7 @@
                 </li></a
               >
               <a href="#contact"
-                ><li class="nav-link rounded block sm:inline-block mt-1 mb-2 px-2 sm:px-4 py-1">
+                ><li class="nav-link rounded block sm:inline-block mt-1 px-2 sm:px-4 py-1">
                   Contacto
                 </li></a
               >
@@ -110,7 +110,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><button
-                  class="nav-apply text-brand-white inline-block text-center py-1 px-2 border border-brand-white rounded"
+                  class="nav-apply text-brand-white block sm:inline-block mt-1 mb-2 text-center px-2 sm:px-4 py-1 border border-brand-white rounded"
                 >
                   Aplicar
                 </button></a
@@ -836,7 +836,14 @@
       let isOpen = false;
 
       window.addEventListener('resize', () => {
-        if (!isMobile) navList.style.display = 'block';
+        if (isMobile) {
+          nav.style.maxHeight = 0;
+          navList.style.display = 'none';
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+        } else {
+          navList.style.display = 'block';
+        }
       });
 
       hamburguerButton.addEventListener('click', () => {
