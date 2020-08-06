@@ -15,6 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion) {
+  .animation {
+    animation-name: none;
+  }
+}
+
 .text-brand-white {
   color: var(--brand-white);
 }
