@@ -7,6 +7,11 @@
     "dev": "live-server --quiet index.html",
     "build:css": "postcss src/app.css -o dist/styles.css"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build:css"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/undefinedschool/mentorship.git"
